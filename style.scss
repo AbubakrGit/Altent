@@ -308,7 +308,7 @@
     text-decoration: none;
   }
   body header .header__navbar .header__navbar__info ul li a::before {
-    margin-top: 5.5px;
+    margin-top: 5.5px !important;
     content: attr(data-text);
     position: absolute;
     color: var(--clr);
