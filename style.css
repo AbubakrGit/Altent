@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   max-width: 1440px;
 }
@@ -269,7 +273,12 @@ body header {
 body header .header__navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 120px 0 120px;
+  padding: 20px 120px 40px 120px;
+  transition: 0.3s;
+  position: fixed;
+  width: 1440px;
+  z-index: 1000;
+  background: #000;
 }
 @media (min-width: 0) and (max-width: 576px) {
   body header .header__navbar {
@@ -318,7 +327,7 @@ body header .header__navbar .header__navbar__info ul li a {
 }
 
 body header .header__navbar .header__navbar__info ul li a::before {
-  margin-top: 5px;
+  margin-top: 5px !important;
   content: attr(data-text);
   position: absolute;
   color: var(--clr);
@@ -646,6 +655,9 @@ body header .purple__ball {
   color: #FFFFFF;
   margin: 0;
 }
+.header__center .header__center__left h1::first-letter {
+  color: #FF6B00;
+}
 @media (min-width: 576px) and (max-width: 767px) {
   .header__center .header__center__left h1 {
     font-family: "Inter";
@@ -818,6 +830,9 @@ body header .purple__ball {
   width: 464px;
   height: 128px;
   color: #FFFFFF;
+}
+.header__footer .header__footer__left h2::first-letter {
+  color: #FF6B00;
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .header__footer .header__footer__left h2 {
@@ -1449,6 +1464,9 @@ main .main__center .main__center__left h3 {
   height: 128px;
   margin: 0;
 }
+main .main__center .main__center__left h3::first-letter {
+  color: #FF6B00;
+}
 main .main__center .main__center__left p {
   font-family: "Raleway";
   font-style: normal;
@@ -1687,6 +1705,9 @@ main .main__footer .main__footer__left h5 {
   margin: 0;
   color: #FFFFFF;
 }
+main .main__footer .main__footer__left h5::first-letter {
+  color: #FF6B00;
+}
 main .main__footer .main__footer__left h5 span a {
   text-decoration: none;
   font-family: "Inter";
@@ -1763,6 +1784,9 @@ main .footer .footer__center .footer___left h4 {
   margin: 0;
   margin-bottom: 24px;
 }
+main .footer .footer__center .footer___left h4::first-letter {
+  color: #FF6B00;
+}
 main .footer .footer__center .footer___left h4 a {
   font-family: "Inter";
   font-style: normal;
@@ -1802,6 +1826,9 @@ main .footer .footer__center .footer___left h5 a:hover {
 main .footer .footer__center .footer___right h4 {
   margin: 0;
   margin-bottom: 24px;
+}
+main .footer .footer__center .footer___right h4::first-letter {
+  color: #FF6B00;
 }
 main .footer .footer__center .footer___right h4 a {
   font-family: "Inter";
@@ -1854,6 +1881,9 @@ main .footer .footer__right h4 a {
   margin: 0;
   text-decoration: none;
 }
+main .footer .footer__right h4 a::first-letter {
+  color: #FF6B00;
+}
 main .footer .footer__right img {
   margin-right: 8px;
   width: 24px;
@@ -1904,4 +1934,8 @@ main .footer .footer__right .location__name {
 main .footer .footer__right .location__name:hover {
   color: #FF6B00;
   transition: 500ms;
+}
+
+.sticky {
+  background: #000;
 }/*# sourceMappingURL=style.css.map */
